@@ -1,0 +1,16 @@
+Model Representation:
+*	Reference :Stanford machine learning.
+*	Training set is represented with below variables.
+*	m = Number of training examples.
+*	x = Input variable/ Feature.
+*	y = output variable Target.
+*	(x, y) - One training example.
+*	(x(i), y(i)) - ith training example.
+*	We use this training set to train our learning algorithm.
+*	The learning algorithm outputs a function that gives an output for an input.
+*	The function is called a hypothesis (h).
+*	For linear regression in one variable, it can be y = mx + c like equation.
+*	Or it can be parabolic in case of quadratic regression.
+* 	Cost Function is : j minimize(theta0, theta1) = 1/2m(summation 1->m)(h(x(i))-y(i))^2 
+	where y is output and h(x) is calculated value from hypothesis.
+*	The best hypothesis gives the minimum value of the cost function.

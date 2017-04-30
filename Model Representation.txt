@@ -11,6 +11,15 @@ Model Representation:
 *	The function is called a hypothesis (h).
 *	For linear regression in one variable, it can be y = mx + c like equation.
 *	Or it can be parabolic in case of quadratic regression.
+
+Cost Function:
 * 	Cost Function is : j minimize(theta0, theta1) = 1/2m(summation 1->m)(h(x(i))-y(i))^2 
-	where y is output and h(x) is calculated value from hypothesis.
-*	The best hypothesis gives the minimum value of the cost function.
+	where y is output and h(x) is calculated value from hypothesis, m is number of training examples.
+	This means we are reducing the overall sum from i=1 to i=m.
+*	We need to choose the values of theta0 and theta1 so that cost function is minimized.
+*	The minimum value of cost function gives the best hypotheses because for all values from
+	1 to m ,j is 0.
+*	Our final objective is to find the value of theta so that J is minimized and we get
+	best hypothesis.
+
+Gradient Descent:

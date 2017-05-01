@@ -1,0 +1,22 @@
+Gradient Descent:
+*	Gradient descent is the algorithm to minimize the cost function.
+*	We take a point on the cost function and we look all around us to
+	see the minimum. Once we see it we keep walking in that direction
+	step by step until we reach the minimum.
+*	The steps are defined by below algorithm.
+*	The algorithm is :
+	thetaj = thetaj - alpha * del(J(theta0,theta1))/del theta0
+*	Same for theta1	:
+	thetaj = thetaj - alpha * del(J(theta0,theta1))/del theta1
+*	Once we are done with calculating values for thetaj for both theta0 and
+	theta1, we simply assign them to theta0 and theta1.
+*	We keep doing this until we reach the minima.
+*	The value of the alpha denotes the size of our step.
+*	Cost function is plot between J(theta0,theta1) vs theta0 and theta1.
+*	When we apply gradient descent it adjust theta0 and theta1	
+	to move closer to minimum value of cost function.
+*	Every time the gradient descent runs the steps get smaller.
+
+
+
+

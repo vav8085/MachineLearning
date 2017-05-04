@@ -19,6 +19,8 @@ Octave Commands:
 			3 4
 			5 6
 *	; sends the rest of input to next row of matrix
+*	You can print A by simply typing >>A
+*	To print certain row you can type A(2,:) % : means everything. same can be done for columns.
 *	Matrix should have same horizontal and vertical dimensions, it cannot be [1;2 3 4; 5 6]
 *	We can also set >>V = 0: 4: 12 this will increment 4 every time and create a column vector like 0 4 8 12
 *	We can also generate a 3/3 matrix with all ones using >>ones(3,3) and like that.
@@ -32,3 +34,15 @@ Octave Commands:
 *	Length(A) gives the longer dimension.
 *	Size(A,1) returns first dimension(rows) similarly size(A,2) returns columns.
 
+Loading data:
+*	To load data we can just >>load filename %this will load all the file data in a variable name as filename
+*	To see all the variables we have in memory we can just do >> who
+*	We can also find the size of the file using size(filename) command.
+*	whos command gives the variables in memory as well as the size, datatype and bytes used.
+*	We can use >> clear variablename % command to clear this variable.
+*	If you simply type clear then it will clear all the variables in the memory.
+*	We can save file using save command >>save hello.mat.
+*	We can save value of a variable in a file by doing >>save hello.mat variablename.
+*	If you want to same data in human readable format then you can do >>save hello.mat v -ascii.
+*	We can concatinate two matrices using >>C = [A B] or >>A = [A,[110;220;330]].
+*	We can also concatinate matrices to the bottom of other using >>C= [A:B].

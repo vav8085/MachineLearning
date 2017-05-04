@@ -1,0 +1,19 @@
+Octave Computing:
+*	You can multiply two matrices using >> A*B
+*	You can also multiply individual elements ising >>A .* B 
+*	We can also square a matrix using A .^2 % . shows that its an elementwise operation.
+*	You can resiprocal using 1 ./A
+*	We can do log(V) and also exp(V) and abs(V).
+*	We can do -V.
+*	We can add 1 to all elements by >>V + ones(length(V), 1)
+*	We can also add 1 to a matrix by doing V + 1.
+*	We can do transpose of a matrix using A'.
+*	We can find maximum value in a matrix by doing >>max(A).
+*	max(A) also returns index by >>[val,ind] =max(A). % A is a vector.
+*	To find max in a matrix you have to do max(max(A)))
+*	we can do sum(A) on a vector to return sum of all elements.
+*	We can also do prod(A) to return product of all values.
+*	Floor(A) and ceil(A) round up and down to nearest integer.
+*	A(:) turns matrix to a 1 column vector.
+*	To take a matrix inverse you can do pinv(A)
+*

@@ -1,4 +1,4 @@
-Model Representation:
+		Model Representation:
 *	Reference :Stanford machine learning.
 *	Training set is represented with below variables.
 *	m = Number of training examples.

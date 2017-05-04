@@ -16,4 +16,39 @@ Octave Computing:
 *	Floor(A) and ceil(A) round up and down to nearest integer.
 *	A(:) turns matrix to a 1 column vector.
 *	To take a matrix inverse you can do pinv(A)
-*
+
+Conditions and Loops:
+*	We can do a for loop using >> for i=1:10, v(i) = 2^i % v is a vector of 10
+* 	examples : >> for i= 1:20 ; v(i) = v(i)+v(i); end;
+	error: A(I): index out of bounds; value 11 out of bound 10
+	>> for i= i:10 , v(i) = v(i) +v(i); end;
+	>> v
+	v =  8   8   8   8   8   8   8   8   8   8
+*	While loop is simply  >> i=1, while i<50, i=i+1;end; % i will become 50
+*	Break statement >> i=0; while i<300, i=i+1; if i==10, break; end; end;
+	>> i
+	i =  10
+*	If and then else:
+	>> if i==10; disp('the value of i is 10'),
+	elseif i==20,
+	disp('the value of i is 20'),
+	else , disp('there is some other value'), end;
+	the value of i is 10
+
+Functions:
+*	In Octave, functions are defined in files with .m extension.
+*	We can search for a .m file and execute the function.
+*	The function body is written in this file.
+*	Example >> squareThisValue(10);
+	>> value = squareThisValue(10);
+	>> value
+	value =  100
+*	We can add the CLASSPATH of the functions using Octave Searchpath
+	addpath('C:\Users\ang\Desktop')
+*	We can also return multiple values in Octave from a function:
+	see file squareAndCubeValues.m
+*	>> [a,b] = squareAndCubeValues(2);
+	>> a
+	a =  4
+	>> b
+	b =  8

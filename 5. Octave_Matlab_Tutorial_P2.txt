@@ -1,21 +1,24 @@
 Octave Computing:
 *	You can multiply two matrices using >> A*B
-*	You can also multiply individual elements ising >>A .* B 
+*	You can also multiply individual elements using >>A .* B 
 *	We can also square a matrix using A .^2 % . shows that its an elementwise operation.
+*	Note that A * A actually different from A.^2 and individual element is nto squared.
 *	You can resiprocal using 1 ./A
 *	We can do log(V) and also exp(V) and abs(V).
 *	We can do -V.
 *	We can add 1 to all elements by >>V + ones(length(V), 1)
 *	We can also add 1 to a matrix by doing V + 1.
 *	We can do transpose of a matrix using A'.
-*	We can find maximum value in a matrix by doing >>max(A).
+*	We can find maximum value in a matrix by doing >>val =max(A).
 *	max(A) also returns index by >>[val,ind] =max(A). % A is a vector.
 *	To find max in a matrix you have to do max(max(A)))
 *	we can do sum(A) on a vector to return sum of all elements.
 *	We can also do prod(A) to return product of all values.
 *	Floor(A) and ceil(A) round up and down to nearest integer.
 *	A(:) turns matrix to a 1 column vector.
-*	To take a matrix inverse you can do pinv(A)
+*	To take a matrix inverse you can do pinv(A).
+*	If we have a row vector a= [ 5 10 30 60] and we do >> a<40 then it will give [1 1 1 0]
+
 
 Conditions and Loops:
 *	We can do a for loop using >> for i=1:10, v(i) = 2^i % v is a vector of 10
@@ -52,3 +55,22 @@ Functions:
 	a =  4
 	>> b
 	b =  8
+	
+	
+Plotting:
+*	We can define any two variables like t = [0.01:0.01:0.98] and y=sin(2*pi*4*t)
+	and we can plot >>plot(t,y) it will show us the plot between two values.
+*	We can also plot cosine function the same way.
+*	We can plot 2 functions over each other by typing >>hold on; and then drawing other 
+	function >>plot(t,y2); %; is must here.
+*	We can also label axes using >> xlabel('time') >> ylabel('value')
+*	We can show legends for both functions using >> legend('sin','cos')
+*	We can also plot many graphs side by side using subplot:
+	>> subplot(1,2,1);
+	>> plot(t,y);
+	>> subplot(1,2,2);
+	>> plot(t,y2,'r');
+*	We can also visualize matrices using >> imagesc(A).
+*	To execute commands one after another use comma(,) to separate them.
+
+Vectorization:

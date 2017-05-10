@@ -45,4 +45,7 @@ Loading data:
 *	We can save value of a variable in a file by doing >>save hello.mat variablename.
 *	If you want to same data in human readable format then you can do >>save hello.mat v -ascii.
 *	We can concatinate two matrices using >>C = [A B] or >>A = [A,[110;220;330]].
-*	We can also concatinate matrices to the bottom of other using >>C= [A:B].
+*	if A = [1 2;3 4;5 6] and B = [7 8; 9 10; 11 12] then i can do C = [A B ] to create [1 2 7 8; 3 4 9 10 ; 5 6 11 12]
+*	We can also concatinate matrices to the bottom of other using >>C= [A:B].		
+*	We can assign values to second column of a matrix by doing >>A[:,2] = [4;5;6]
+*

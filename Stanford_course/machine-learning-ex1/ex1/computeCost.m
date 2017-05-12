@@ -16,8 +16,7 @@ m = length(y); % number of training examples
 xi = X*theta;
 xMinusY = (xi-y).^2;
 value =1/(2*m) * sum(xMinusY);
-J = round(value*100)/100;
-
+J = value;
 
 % =========================================================================
 

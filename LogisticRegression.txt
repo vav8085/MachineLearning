@@ -1,0 +1,5 @@
+Logistic Regression:
+*	In classification problems we usually determine the value of a variable Y E {0,1}.
+*	Its difficult to use linear regression in this scenario because we cannot define a boundary
+	between the values that are 0 and that are 1 using a straight line hypothesis.
+	

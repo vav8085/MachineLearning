@@ -1,9 +1,0 @@
-Classification Problems:
-*	Linear regression is more about regression problem where we get huge data and we regress over it
-	to decrease the cost, in classification problem we have to classify data between 1 or more.
-*	Classification problems are like Tumor size (Malignant/ Benign), Email (Spam/ Not Spam).
-*	In classification problems we usually determine the value of a variable Y E {0,1}.
-*	Its difficult to use linear regression in this scenario because we cannot define a boundary
-	between the values that are 0 and that are 1 using a straight line hypothesis, Refer (Diag_Lin_Reg_Classify.png)
-*	0 is called the negative class and 1 is called the positive class.
-* Logistic regression solves this problem by giving an output between 0<= h(x) <=1.

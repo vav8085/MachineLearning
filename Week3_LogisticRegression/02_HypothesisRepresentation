@@ -1,0 +1,17 @@
+Hypothesis for Logistic Regression:
+
+1.  We always want value of h(x) between 0 and 1.
+2.  In logistic regression we have h(x) = g(theta^T x)
+    where sigmoid function/logistic function g(z) = 1/(1+e^-z)
+    => h(x) = 1/(1+e^-(theta^T x))
+3.  Because logistic function is always between 0 and 1 our
+    hypothesis will also always remain between 0 and 1.
+4.  h(x) will give a value that will act as probability of y=1.
+    If h(x) comes out 0.7 a certain person has 70% probability of y=1.
+5.  h(x) = P(y=1|x; theta) is the notation used to show probability of y=1
+    where feature is x and Probability is parameterized by theta.
+6.  We can also say that Probability of tumor is benign where tumor size
+    is x.
+7.  x= vertical[x0 x1] = vertical[1 tumorSize]
+8.  P(y=1|x; theta) = 1 - P(y=0|x; theta)
+9.

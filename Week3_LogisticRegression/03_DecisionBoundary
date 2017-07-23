@@ -1,0 +1,7 @@
+Decision Boundary:
+
+1.  We can see that the sigmoid function g(z) is greater than 0.5 when
+    z>=0.5.
+2.  So h(x) = g(theta^T x) >=0.5 when theta^T x >=0. And y will be 1 in this case.
+3.  Also h(x) = g(theta^T x) < 0.5 when theta^T x <0. And y will be 0 in this case.
+4.

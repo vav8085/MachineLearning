@@ -14,4 +14,4 @@ Hypothesis for Logistic Regression:
     is x.
 7.  x= vertical[x0 x1] = vertical[1 tumorSize]
 8.  P(y=1|x; theta) = 1 - P(y=0|x; theta)
-9.
+9.  

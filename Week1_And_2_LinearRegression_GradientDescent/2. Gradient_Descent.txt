@@ -12,11 +12,11 @@ Gradient Descent:
 	theta1, we simply assign them to theta0 and theta1.
 *	We keep doing this until we reach the minima.
 *	The value of the alpha denotes the size of our step.
+*	Notice that we are not worried about the value of x, its theta0 and theta1 that
+	we modify because x and y are data and we need to find the value of theta0 and
+	theta1 to make h(x) closer to y. In case of multiple features also we have multiple
+	theta which are used to reduce the cost ..(h(x)-y)...
 *	Cost function is plot between J(theta0,theta1) vs theta0 and theta1.
-*	When we apply gradient descent it adjust theta0 and theta1	
+*	When we apply gradient descent it adjust theta0 and theta1
 	to move closer to minimum value of cost function.
 *	Every time the gradient descent runs the steps get smaller.
-
-
-
-

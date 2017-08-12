@@ -1,3 +1,14 @@
 Cost Function:
 
-1.  
+1.  We know that the linear regression cost function is 1/2(h(x)-y)^2.
+2.  We know that h(x) is g(theta^T x).
+3.  If we minimize this cost function directly then it will give us a
+    non-convex function with many local minima.
+4.  This is because h(x) = 1/(1+e^-(theta^T x)) is non linear.
+5.  If we run gradient descent on this non-convex function then its not going to
+    converge to global minima.
+6.  This is why we use a different cost function for logistic regression.
+7.  Cost(h(x),y) = -log(h(x)) if y=1
+                 = -(log(1-h(x))) if y=0
+8.  Check "CostFunction.png" and CostFunction2.png" for plot.
+9.  Keeping cost function like this guarantees that our cost function is convex.

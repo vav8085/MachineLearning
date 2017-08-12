@@ -7,3 +7,6 @@ Decision Boundary:
 4.  Decision boundary is the line that separates y = 1 from y =0. It could be a circle,
     a straight line or any curve.
 5.  Decision boundary is a property of a hypothesis and not a dataset.
+6.  Decision boundary can be any shape, it can be a parabola, an ellipse , circle etc.
+7.  if we have multiple variables x1, x2, x3 ... then we compare the function >=0 for y=1
+    and <0 for y = 0. like x1^2 +x2^2 >=1 is a circle of radius 1.

@@ -12,3 +12,13 @@ Cost Function:
                  = -(log(1-h(x))) if y=0
 8.  Check "CostFunction.png" and CostFunction2.png" for plot.
 9.  Keeping cost function like this guarantees that our cost function is convex.
+10. When y=1 then if h(x)=1 then cost is minimized.
+11. When y=1 then if h(x)=0 then cost is infinite.
+12. When y=0 then if h(x)=0 then cost is minimized.
+13. When y=0 then if h(x)=1 then cost is infinite.
+
+Cost Function Simplified:
+
+1.  The cost function can be minimized as:
+    Cost(h(x)) = -y*log(h(x)) - (-y)log(1-h(x)) .
+2.  

@@ -1,0 +1,11 @@
+Gradient Descent:
+
+1.  The gradient descent is similar to the linear regression one.
+2.  thetaj = thetaj - alpha d J(theta)/ d thetaj
+3.  or thetaj = thetaj - alpha del(theta)
+4.  Here is J(theta) is our hypothesis.
+5.  If we put the value of j(theta) here.
+    thetaj = thetaj - alpha sum(i->m)(h(xi) - yi) xi
+6.  If we see this equation then its same as that of linear regression.
+7.  The main different is in the h(x) that is 1/(i+e^thetaT x).
+8.  We can also use feature scaling to make gradient descent run faster.

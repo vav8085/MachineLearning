@@ -4,7 +4,7 @@ Gradient Descent:
 2.  thetaj = thetaj - alpha d J(theta)/ d thetaj
 3.  or thetaj = thetaj - alpha del(theta)
 4.  Here is J(theta) is our hypothesis.
-5.  If we put the value of j(theta) here.
+5.  If we put the value of j(theta) that is our cost function here.
     thetaj = thetaj - alpha sum(i->m)(h(xi) - yi) xi
 6.  If we see this equation then its same as that of linear regression.
 7.  The main different is in the h(x) that is 1/(i+e^thetaT x).

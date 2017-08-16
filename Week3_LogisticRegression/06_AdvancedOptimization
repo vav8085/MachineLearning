@@ -1,0 +1,19 @@
+Advanced Optimization:
+
+1.  Gradient descent calculates the partial derivative of j(theta) that is our cost function.
+2.  This way we have to write code for calculating our J(theta) and our partial derivative.
+3.  Thus our gradient descent will do derivative and Cost function calculation 1->m times.
+4.  We have other optimization algorithms that can do what gradient descent does for us:
+    - Conjugate Gradient
+    - BFGS
+    - L-BFGS
+5.  With above algorithm we don't need to manually pick up learning rate alpha.
+6.  These algorithms are smart and can pick up alpha dynamically.
+7.  They converge faster than gradient descent.
+8.  The only disadvantage of these algorithms is that they are more complex.
+9.  Check AdvancedOptimizationOctave.png for Advanced optimization done on a cost function below:
+    J(theta) = (theta1-5)^2 + (theta2-5)^2
+    d(J(theta1)/dtheta1 = 2(theta1-5)
+    d(J(theta2)/dtheta2 = 2(theta2-5)
+10. Check AdvancedOptimizationOctave2.png to check the implementation by Andrew NG.
+11. fminunc will work with number of theta >=2.

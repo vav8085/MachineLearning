@@ -1,0 +1,22 @@
+Multi Class Classification
+
+1.  This is a type of classification problem where we have more than 2 classes.
+    these can be the cancer is malignant or benign or something in between.
+2.  If you see the binary classification problem plot we plot two different classes with
+    two different symbols {O,X} for cancer is malignant or benign.
+3.  Don't confuse with our input variable x1,x2,x3.. those were the various dimensions
+    affecting the value of y, like cell size, number of cancerous cells, other conditions.
+4.  Multiple classes are actually multiple values of Y for binary its 0,1 for multi class
+    it can be 0,1,2...
+5.  Just like we had a decision boundary for the binary classification we have boundary
+    for multi class classification as well.
+
+One Versus all:
+1.  In one versus all classification we consider one class at a time and call it ONE.
+    and we group all other classes and call them REST.
+    so it becomes ONE vs REST binary classification.
+2.  We do this once for every class and each one gives us a different h(x).
+    like h1(x), h2(x).....
+3.  We then run logistic regression on all the hi(x) and find the one that
+    gives the closest value to y and the highest probability of  i=y.
+    

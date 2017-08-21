@@ -1,0 +1,33 @@
+Problem of Overfitting:
+
+1.  Overfitting is a problem that makes various learning algorithms perform poorly.
+2.  When we have a problem where housing prices are increasing quadratically y= x^2.
+    and we want to find an algorithm to predict the prices we can fit it:
+    1.  With a linear algorithm y = theta0 + theta1x.
+    2.  With a quadratic algorithm y = theta0 + theta1x + theta2x^2.
+    3.  Or with a higher order polynomial equation y = theta0 + theta1x + theta2x^2
+        + theta3x^3 + theta4x^4
+
+3.  Our first equation y = theta0 + theta1x is a straight line and may not pass through all
+    the points of our quadratic function (e.g. house prices vs price graph. hp = p^2).
+    This is called the problem of Under fitting.
+4.  In second equation our plot will pass through every point and it will be a clear
+    parabolic curve.
+5.  In the third example it will pass through every point but the curve will not be
+    parabolic but a bit zig-zag. This is because of more input variables(price, size, location etc).
+6.  When we have more number of input variables it imposes more criteria on the curve and
+    makes the solution/hypothesis more specific to a problem. This is called the problem
+    of overfitting. This may cause algorithm to not work for more generalized cases with fewer params.
+7.  The same goes for Logistic regression.
+8.  Refer Overfitting1.png and Overfitting_logistic regression.png screenshots taken from Andrew Ng course.
+
+Solving the Overfitting problem:
+
+1.  We have 2 ways of solving the overfitting the problem:
+    A.  Remove some of the features.
+        i.  This can be done by manually selecting which features to keep and which are more significant.
+        ii. Use Model selection problem.
+    B.  Regularization:
+        i.  Keep all the features but reduce the magnitude of the theta.
+            This works well when we have a lot of features where each one is contributing
+            to the value of y.

@@ -1,0 +1,32 @@
+Regularization Cost Function:
+
+1.  We know that when we have higher order polynomial equation our graph is not parabolic.
+2.  If we already know that this is happening because of certain function in our high order
+    hypothesis then we can reduce that function itself.
+3.  An example can be of below equation:
+    y = theta0 + theta1x + theta2x^2 + theta3x^3 + theta4x^4.....
+
+4.  If we have theta3x^3 and theta4x^4 that are the reasons of overfitting then we can
+    reduce them with cost function as shown below:
+    cost(h(x),y) = 1/2m *sum(i=1->m)(h(xi) - yi)^2 + 1000theta3^2 + 1000theta4^2
+
+5.  To reduce this cost function we have to have theta3 and theta4 close to 0.
+6.  Ultimately we will be removing theta3x^3 + theta4x^4.
+
+Regularization:
+
+1.  To create a simpler hypothesis that is less prone to overfitting we can keep
+    smaller values of all theta0, theta1, theta2 .....thetaN
+2.  Usually we dont know which parameter to reduce if we have too many parameters.
+3.  In this case we reduce them all and the cost function looks like below:
+    cost(h(x),y) = 1/2m *sum(i=1->m)(h(xi) - yi)^2 + Lambda * sum(i=1->n) thetaj^2
+                                  |                           |
+                            Fit the data               Reduce the parameters
+    Note- We are not penalizing theta0 above, it starts from 1 to n.
+4.  Lambda here is called the Regularization Parameter. Refer Regularization_09.png taken from Andrew Ng course.
+5.  The function of Lambda is to control the tradeoff between the fitting of data well and
+    reducing the parameters.
+6.  With regularization our higher order polynomial hypothesis will plot close to quadratic plot.
+7.  If we keep the Lambda too high then it may cause graph to under-fit. It because by doing that
+    we are reducing all the theta to the values close to zeroes that will make the graph shrink to
+    a straight line or much lower order polynomial equation.

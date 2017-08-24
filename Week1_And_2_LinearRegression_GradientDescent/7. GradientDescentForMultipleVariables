@@ -1,0 +1,37 @@
+Multiple variable gradient descent:
+
+1.  This is covered in Multivarient_Linear_Regression.docx but this file got some helping points.
+2.  In case of multiple variables we calculate all the theta0, theta1, theta2... together while
+    applying gradient descent using separate equations.
+3.  The basic thing about feature scaling is dividing each training set value by a value(usually max value)
+    to bring the feature to certain range(-1<=x<=1). This needs to be done separately for every feature.
+    Once all the features are on the same scale they are easier to plot and thus makes gradient descent
+    converge faster.
+4.  Sometimes while feature scaling we also do "Mean Normalization" so we subtract the mean(ui) from each value(xi)
+    before dividing it maximum value (maxValue)
+    (xi- ui)/ maxValue
+5.  The better formula is when we calculate a standard deviation that is max-min
+    (xi- ui)/ standardDeviation
+6.  To check if gradient descent is working correctly the graph of J(theta) vs number of iterations should look like.
+    JTheta_vs_numberOfIterations.png and J(theta) should decrease by number of iterations.
+7.  When alpha is too large then gradient descent can overshoot the local minima and gradient descent may never converge.
+8.  When alpha is too small then gradient descent may take too long to converge.
+
+Selecting correct features:
+1.  If we have features like length and width of the house then instead of using two variables length and width
+    as features we can create another out of them i.e. area. our hypothesis will be simplified to theta0 + theta1*x
+    from a quadratic value.
+2.  Also if you are using a variable in a polynomial regression like theta0 + theta1x1 + theta2*sqrt(x1)
+    then you have to scale the feature x1 correctly x1 will become x1/maxValue , x2 will become x2/sqrt(mavValue)
+
+Normal Equation:
+1.  Normal equation solves for theta analytically and will converge in a single shot.
+2.  x0 is always 1
+3.  Feature scaling is not necessary for normal equation.
+4.  No need to choose alpha.
+5.  Normal equation is very slow if feature set is very large.
+
+Normal Equation Non invertibility:
+1.  Sometimes redundant features(size in sq meters, size in sqft) cause a matrix to become non invertible.
+2.  If there are too many features and too small training set then also it can cause a matrix to become non invertible.
+    We can use regularization to fix this problem.

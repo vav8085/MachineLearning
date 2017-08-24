@@ -1,1 +1,19 @@
 Regularized Linear Regression:
+
+1.  We know that our regularized cost function is :
+    J(theta) = 1/2m * [ sum(i=1->m) (h(x)-y)^2+ lambda (j=1->n) thetaj^2 ]
+    where m is the number of training examples and n is the number of features-1
+2.  Because we have a new term here for lambda.. the gradient descent becomes something like
+    shown in gradientDescentRegularized.png.
+3.  The term 1 - alpha*lambda/m is always <1 for small learning rate alpha and small lambda.
+4.  The effect of this number is that it makes thetaj a bit smaller every time.
+
+Normal equation after regularization:
+
+1.  We know that the normal equation looks like in figure NormalEquationRegularization.png
+2.  After regularization it gets a new field as shown in figure with lambda.
+
+Non Inevitability solution using Regularization:
+
+1.  If m(examples)<=n(features) then we know that X^T * X wont be invertible.
+2.  When lambda >0 then it makes the  X^T * X + lambda [...] invertible.

@@ -1,1 +1,5 @@
 Regularized Logistic Regression:
+
+1.  Logistic regression is also prone to overfitting problem as we saw in 08 if the
+    feature set is to large.
+2.  

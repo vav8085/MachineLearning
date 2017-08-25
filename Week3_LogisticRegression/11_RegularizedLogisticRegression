@@ -2,4 +2,12 @@ Regularized Logistic Regression:
 
 1.  Logistic regression is also prone to overfitting problem as we saw in 08 if the
     feature set is to large.
-2.  
+2.  We know that the cost function of logistic regression is :
+    -[1/m * sum(i=1-m)yi* log h(xi) +(1-yi)* log(1-h(xi))]
+3.  When we regularize this we add + lambda/2m * sum(i=1->n) thetaj ^2
+4.  The gradient descent looks the same as one for linear regression but the
+    h(x) changes to 1/(1+e^-theta^T x)
+    It can be seen in the RegularizedLogisticRegressionGradientDescent.png file.
+
+Advanced Optimization:
+<Pending>
